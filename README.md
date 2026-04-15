@@ -94,6 +94,18 @@ first scan — all traffic goes to RFC 1918 private IPs (your LAN miners)
 plus HTTPS to CoinGecko and mempool.space for price/difficulty lookups.
 Nothing is uploaded anywhere else.
 
+## Licensing
+
+- **AxeHub** itself is **proprietary** — see [`LICENSE`](LICENSE).
+  Personal, non-commercial use of official binaries is allowed; reverse
+  engineering, redistribution, and rebranding are not.
+- **Bundled open-source components** (120 Dart/Flutter packages +
+  NotoSans font) ship under their original licenses — MIT, Apache 2.0,
+  BSD 3-Clause, SIL OFL 1.1. Full text in
+  [`THIRD_PARTY_LICENSES.txt`](THIRD_PARTY_LICENSES.txt).
+- In-app view: **Settings → About → Open-source licenses** shows the
+  same list via Flutter's `showLicensePage`.
+
 ## Privacy policy
 
 https://dwespl.github.io/axehub-legal/
