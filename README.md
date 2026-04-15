@@ -94,6 +94,41 @@ first scan — all traffic goes to RFC 1918 private IPs (your LAN miners)
 plus HTTPS to CoinGecko and mempool.space for price/difficulty lookups.
 Nothing is uploaded anywhere else.
 
+### Other false-positive signals you may see on VirusTotal
+
+VT adds sandbox and YARA verdicts **asynchronously** over hours or days
+after the initial upload — your report may look cleaner now and grow
+some yellow labels later. Here's what the common ones mean.
+
+**Zenbox Android sandbox: `MALWARE / TROJAN / EVADER` (confidence ~64)**
+
+Zenbox is an automated sandbox that executes the APK and watches
+runtime behavior. AxeHub trips:
+
+- **`EVADER`** — Flutter itself queries device traits at startup
+  (orientation, DPI, battery, tablet-vs-phone). The sandbox reads
+  those probes as *"the app is trying to detect it's being analyzed
+  and will hide its payload"*. Every Flutter app with a responsive
+  layout looks the same to this heuristic.
+- **`TROJAN / MALWARE`** — the obfuscated Dart AOT bytecode plus the
+  LAN scanner plus the foreground-service-for-Hub combination matches
+  generic suspicious-app patterns. No specific signature, just a shape
+  that worries pattern-based detectors.
+
+Confidence 64 / 100 reflects the sandbox's own uncertainty.
+
+**YARA rule `Windows_API_Function` (InQuest) on the Windows ZIP**
+
+Its own description: *"When this signature alerts on an executable,
+it is not an indication of malicious behavior."* It just notices that
+the binary calls into Windows API — which every Windows executable
+does. Harmless informational tag.
+
+If you want actual evidence of what AxeHub does, the release binaries
+are obfuscated but not encrypted. Disassemble, strace/dtrace the
+process, or capture packets — the on-wire truth is RFC 1918 LAN
+addresses plus HTTPS price/difficulty lookups, nothing else.
+
 ## Licensing
 
 - **AxeHub** itself is **proprietary** — see [`LICENSE`](LICENSE).
