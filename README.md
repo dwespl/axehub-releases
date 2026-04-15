@@ -32,8 +32,8 @@ Each release ships with three platforms:
 | Platform | File | Install |
 |----------|------|---------|
 | Android | `axehub-android-X.Y.Z.apk` | Tap to install (enable "Install from unknown sources") |
-| Windows | `axehub-windows-X.Y.Z.zip` | Extract and run `bitaxe_manager.exe` |
-| Linux | `axehub-linux-X.Y.Z.tar.gz` | Extract and run `./bitaxe_manager` |
+| Windows | `axehub-windows-X.Y.Z.zip` | Extract and run `axehub.exe` |
+| Linux | `axehub-linux-X.Y.Z.tar.gz` | Extract and run `./axehub` |
 
 Android is also available on **[Google Play Store](https://play.google.com/store/apps/details?id=com.axehub.app)**.
 
