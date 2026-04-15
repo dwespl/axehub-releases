@@ -1,0 +1,140 @@
+AXEHUB END USER LICENSE AGREEMENT (EULA)
+
+Copyright (c) 2026 dwespl. All rights reserved.
+
+This End User License Agreement ("Agreement") is a legal agreement
+between you (either an individual or a single entity, the "Licensee")
+and dwespl ("Licensor") for the AxeHub software, which
+includes the Android application, Windows application, Linux
+application, and accompanying documentation (collectively, the
+"Software").
+
+By downloading, installing, or using the Software, you agree to be bound
+by the terms of this Agreement. If you do not agree to the terms of this
+Agreement, do not install or use the Software.
+
+1. GRANT OF LICENSE
+
+   Subject to the terms of this Agreement, Licensor grants Licensee a
+   personal, non-exclusive, non-transferable, revocable license to
+   install and use the Software on devices owned or controlled by
+   Licensee, solely for Licensee's own personal, non-commercial use of
+   managing Licensee's own cryptocurrency mining hardware.
+
+2. RESTRICTIONS
+
+   Licensee shall NOT:
+
+   (a) Copy, modify, adapt, translate, or create derivative works based
+       on the Software, except as expressly permitted by applicable law
+       that cannot be contractually waived.
+
+   (b) Reverse engineer, decompile, disassemble, or otherwise attempt to
+       derive the source code of the Software, except to the extent
+       such activity is expressly permitted by applicable law
+       notwithstanding this restriction.
+
+   (c) Rent, lease, lend, sell, sublicense, assign, distribute, publish,
+       transfer, or otherwise make available the Software to any third
+       party, including but not limited to hosting the Software on a
+       public or private network for others to access.
+
+   (d) Remove, alter, or obscure any copyright, trademark, or other
+       proprietary notice in or on the Software.
+
+   (e) Use the Software for any commercial purpose, including but not
+       limited to mining-as-a-service operations, without prior written
+       consent from Licensor.
+
+   (f) Use the "AxeHub" name, logo, or any Licensor trademark to endorse
+       or promote products derived from the Software without prior
+       written consent from Licensor.
+
+   (g) Use the Software in any manner that violates applicable law.
+
+3. OWNERSHIP
+
+   The Software is licensed, not sold. Licensor retains all right,
+   title, and interest in and to the Software, including all copyrights,
+   trademarks, trade secrets, and other intellectual property rights.
+   This Agreement does not grant Licensee any rights to trademarks or
+   service marks of Licensor.
+
+4. THIRD-PARTY COMPONENTS
+
+   The Software incorporates third-party open-source components listed
+   in THIRD_PARTY_LICENSES.txt (when bundled with the distribution) or
+   accessible within the application's About screen. Each third-party
+   component is licensed under its respective terms, which are in
+   addition to (and, in case of conflict with respect to that component
+   only, supersede) the terms of this Agreement for that component.
+
+5. DATA AND PRIVACY
+
+   The Software does not transmit personal data to Licensor. Detailed
+   data handling is described in the privacy policy published at
+   https://dwespl.github.io/axehub-legal/ at the time of release.
+
+6. NO WARRANTY
+
+   THE SOFTWARE IS PROVIDED "AS IS" AND "AS AVAILABLE", WITHOUT
+   WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED
+   TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR
+   PURPOSE, TITLE, AND NON-INFRINGEMENT. LICENSOR DOES NOT WARRANT THAT
+   THE SOFTWARE WILL BE ERROR-FREE, UNINTERRUPTED, OR THAT DEFECTS WILL
+   BE CORRECTED.
+
+   THE SOFTWARE CONTAINS FEATURES THAT CONTROL CRYPTOCURRENCY MINING
+   HARDWARE, INCLUDING FREQUENCY AND VOLTAGE TUNING. LICENSEE
+   ACKNOWLEDGES THAT MISCONFIGURATION MAY RESULT IN HARDWARE DAMAGE,
+   DATA LOSS, FIRE, OR OTHER PROPERTY DAMAGE, AND ACCEPTS FULL
+   RESPONSIBILITY FOR SUCH USE.
+
+7. LIMITATION OF LIABILITY
+
+   TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL
+   LICENSOR BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL,
+   CONSEQUENTIAL, OR PUNITIVE DAMAGES, OR ANY LOSS OF PROFITS OR
+   REVENUE, WHETHER INCURRED DIRECTLY OR INDIRECTLY, OR ANY LOSS OF
+   DATA, USE, GOODWILL, OR OTHER INTANGIBLE LOSSES, RESULTING FROM
+   (a) LICENSEE'S USE OR INABILITY TO USE THE SOFTWARE; (b) ANY
+   UNAUTHORIZED ACCESS TO OR ALTERATION OF LICENSEE'S TRANSMISSIONS OR
+   DATA; (c) STATEMENTS OR CONDUCT OF ANY THIRD PARTY ON THE SOFTWARE;
+   OR (d) ANY OTHER MATTER RELATING TO THE SOFTWARE.
+
+   LICENSOR'S AGGREGATE LIABILITY ARISING OUT OF OR RELATING TO THIS
+   AGREEMENT OR THE SOFTWARE SHALL NOT EXCEED THE AMOUNT PAID BY
+   LICENSEE FOR THE SOFTWARE (WHICH, FOR FREE DISTRIBUTIONS, IS ZERO).
+
+8. TERMINATION
+
+   This Agreement is effective until terminated. Licensor may terminate
+   this Agreement at any time if Licensee fails to comply with any
+   term. Upon termination, Licensee must cease all use of the Software
+   and delete all copies.
+
+9. GOVERNING LAW
+
+   This Agreement shall be governed by and construed in accordance with
+   the laws of Poland, without regard to its conflict of law
+   principles. Any dispute arising under this Agreement shall be
+   subject to the exclusive jurisdiction of the courts of Poland.
+
+10. ENTIRE AGREEMENT
+
+    This Agreement constitutes the entire agreement between Licensee
+    and Licensor with respect to the Software and supersedes all prior
+    or contemporaneous understandings. If any provision of this
+    Agreement is held unenforceable, the remaining provisions shall
+    continue in full force and effect.
+
+11. CONTACT
+
+    For licensing inquiries beyond the scope of this Agreement
+    (including commercial licensing, redistribution, or derivative
+    works), open an issue at:
+    https://github.com/dwespl/axehub-releases/issues
+
+---
+
+Last updated: 2026-04-15
