@@ -42,11 +42,29 @@ Android is also available on **[Google Play Store](https://play.google.com/store
 Every binary has an accompanying `.sha256` file. Check the hash before running:
 
     # Linux / macOS
-    sha256sum -c axehub-linux-1.0.7.tar.gz.sha256
+    sha256sum -c axehub-linux-1.0.8+18.tar.gz.sha256
 
     # Windows PowerShell
-    Get-FileHash axehub-windows-1.0.7.zip -Algorithm SHA256
+    Get-FileHash axehub-windows-1.0.8+18.zip -Algorithm SHA256
     # compare against the hash in the release notes
+
+## Security scans (VirusTotal)
+
+All release binaries are scanned on [VirusTotal](https://www.virustotal.com)
+so you can verify them before trusting any unsigned executable. Click the
+hash to see the public report.
+
+### v1.0.8
+
+| Platform | SHA-256 |
+|----------|---------|
+| Android APK | [`c629af5d…2f566`](https://www.virustotal.com/gui/file/c629af5d20fa1f4062a815bc931a2220a1617e0c913c5f4a62c9934dbae2f566) |
+| Windows ZIP | [`b2e11c46…82aad`](https://www.virustotal.com/gui/file/b2e11c46f8a75a92544ba237eaa710d2fb2f7c24647d7df9462e6ad4f4f82aad) |
+| Linux tar.gz | [`fbfd50bd…4c616`](https://www.virustotal.com/gui/file/fbfd50bdd84ba8db8ad7d6d8744397537d2273191651cf122d2d39d71784c616) |
+
+> Windows will still show a SmartScreen "Unknown publisher" warning — AxeHub
+> is not yet code-signed with an EV certificate. Hash verification and the
+> VirusTotal report are your primary trust signals for v1.0.x.
 
 ## Privacy policy
 
