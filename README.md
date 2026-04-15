@@ -66,6 +66,34 @@ hash to see the public report.
 > is not yet code-signed with an EV certificate. Hash verification and the
 > VirusTotal report are your primary trust signals for v1.0.x.
 
+### Why does Kaspersky (and maybe others) flag the APK?
+
+You may see **1 out of ~70 engines** flag the APK with a verdict like:
+
+    Not-a-virus:HEUR:RiskTool.AndroidOS.Miner.b
+
+The leading **`Not-a-virus:`** prefix is Kaspersky explicitly telling you
+that **this is not malware**. `RiskTool` is their category for legitimate
+utilities that *could* be misused — the same bucket that holds VPNs, remote
+admin tools, SSH clients, and password recovery utilities.
+
+Their heuristic triggers on the presence of mining-related strings
+(`hashrate`, `stratum`, `pool`, etc.) in the APK. That signal is correct —
+AxeHub talks to mining hardware — but the classification as `Miner.b` is
+imprecise for this app:
+
+- **Covert cryptominers** use your device's CPU/GPU to mine, typically
+  without consent. That's what `Miner.*` usually flags.
+- **AxeHub** does **not** mine on the device it runs on. It only queries
+  stats (hashrate, temperature, power) and sends configuration commands
+  over your LAN to *separate, dedicated* ASIC mining hardware that you
+  physically own.
+
+If you're uncomfortable, verify by reading the outbound connections on
+first scan — all traffic goes to RFC 1918 private IPs (your LAN miners)
+plus HTTPS to CoinGecko and mempool.space for price/difficulty lookups.
+Nothing is uploaded anywhere else.
+
 ## Privacy policy
 
 https://dwespl.github.io/axehub-legal/
