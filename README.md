@@ -13,6 +13,7 @@ built-in HTTPS hub.
 - **Canaan Avalon Nano 3S**
 - **Antminer S19 / S21 series** (stock cgminer, MaraFW, Braiins OS)
 - **Goldshell Mini Doge** and other bfgminer devices
+- **NMMiner** (ESP32-S3 / ESP32 solo miners, firmware v1.6–v1.8)
 - **EBAZ4205 FPGA** — Xilinx Zynq-7010 SHA-256 miner (BC2 Edition)
 - Generic CGMiner-family devices on port 4028
 
@@ -42,10 +43,10 @@ Android is also available on **[Google Play Store](https://play.google.com/store
 Every binary has an accompanying `.sha256` file. Check the hash before running:
 
     # Linux / macOS
-    sha256sum -c axehub-linux-1.0.9+19.tar.gz.sha256
+    sha256sum -c axehub-linux-1.1.0+20.tar.gz.sha256
 
     # Windows PowerShell
-    Get-FileHash axehub-windows-1.0.9+19.zip -Algorithm SHA256
+    Get-FileHash axehub-windows-1.1.0+20.zip -Algorithm SHA256
     # compare against the hash in the release notes
 
 ## Security scans (VirusTotal)
@@ -53,6 +54,18 @@ Every binary has an accompanying `.sha256` file. Check the hash before running:
 All release binaries are scanned on [VirusTotal](https://www.virustotal.com)
 so you can verify them before trusting any unsigned executable. Click the
 hash to see the public report.
+
+### v1.1.0
+
+- NMMiner (ESP32 solo miner) support — auto-detect, monitor, pool change
+- Per-brand device colors
+- Faster offline detection
+
+| Platform | SHA-256 | VirusTotal verdict |
+|----------|---------|--------------------|
+| Android APK | [`66d61aaa…a3e32`](https://www.virustotal.com/gui/file/66d61aaa530002209b0fcb1e8ea3c017d1fc926c76362d4b5f0423251a6a3e32) | pending |
+| Windows ZIP | [`cf69c061…939b7`](https://www.virustotal.com/gui/file/cf69c0617829b2e908d991e068fd0c76696df16a13fee8050f50886da95939b7) | pending |
+| Linux tar.gz | [`9ff6fe2f…78d58`](https://www.virustotal.com/gui/file/9ff6fe2f30a782eda53336c2d5ed95ae44e3d8f62523df1268a950e085678d58) | pending |
 
 ### v1.0.9
 
@@ -151,4 +164,4 @@ Issues and feature requests: [axehub-releases/issues](https://github.com/dwespl/
 
 This is a hobby project — replies come when they come.
 
-Not affiliated with Bitmain, Canaan, Goldshell, or the Bitaxe team.
+Not affiliated with Bitmain, Canaan, Goldshell, NMMiner, or the Bitaxe team.
