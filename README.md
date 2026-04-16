@@ -63,9 +63,9 @@ hash to see the public report.
 
 | Platform | SHA-256 | VirusTotal verdict |
 |----------|---------|--------------------|
-| Android APK | [`66d61aaa…a3e32`](https://www.virustotal.com/gui/file/66d61aaa530002209b0fcb1e8ea3c017d1fc926c76362d4b5f0423251a6a3e32) | pending |
-| Windows ZIP | [`cf69c061…939b7`](https://www.virustotal.com/gui/file/cf69c0617829b2e908d991e068fd0c76696df16a13fee8050f50886da95939b7) | pending |
-| Linux tar.gz | [`9ff6fe2f…78d58`](https://www.virustotal.com/gui/file/9ff6fe2f30a782eda53336c2d5ed95ae44e3d8f62523df1268a950e085678d58) | pending |
+| Android APK | [`66d61aaa…a3e32`](https://www.virustotal.com/gui/file/66d61aaa530002209b0fcb1e8ea3c017d1fc926c76362d4b5f0423251a6a3e32) | 1 / 66 engines (Kaspersky heuristic, see below) |
+| Windows ZIP | [`cf69c061…939b7`](https://www.virustotal.com/gui/file/cf69c0617829b2e908d991e068fd0c76696df16a13fee8050f50886da95939b7) | **0 / 69 engines** ✓ clean |
+| Linux tar.gz | [`9ff6fe2f…78d58`](https://www.virustotal.com/gui/file/9ff6fe2f30a782eda53336c2d5ed95ae44e3d8f62523df1268a950e085678d58) | **0 / 62 engines** ✓ clean |
 
 ### v1.0.9
 
