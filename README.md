@@ -43,10 +43,10 @@ Android is also available on **[Google Play Store](https://play.google.com/store
 Every binary has an accompanying `.sha256` file. Check the hash before running:
 
     # Linux / macOS
-    sha256sum -c axehub-linux-1.1.0+20.tar.gz.sha256
+    sha256sum -c axehub-linux-1.2.0+21.tar.gz.sha256
 
     # Windows PowerShell
-    Get-FileHash axehub-windows-1.1.0+20.zip -Algorithm SHA256
+    Get-FileHash axehub-windows-1.2.0+21.zip -Algorithm SHA256
     # compare against the hash in the release notes
 
 ## Security scans (VirusTotal)
@@ -54,6 +54,18 @@ Every binary has an accompanying `.sha256` file. Check the hash before running:
 All release binaries are scanned on [VirusTotal](https://www.virustotal.com)
 so you can verify them before trusting any unsigned executable. Click the
 hash to see the public report.
+
+### v1.2.0
+
+- Pool presets — one-tap pool switching with coin icons and SOLO/PPS badges
+- Default pool: bc2-solo.org (BC2)
+- UI: ripple effects, drag & drop reorder, right-click menus on desktop
+
+| Platform | SHA-256 | VirusTotal verdict |
+|----------|---------|--------------------|
+| Android APK | [`516db2ba…61ec3`](https://www.virustotal.com/gui/file/516db2ba8c3858ff68c1976aa55c2543507f2a7dba791bf86a37523aac461ec3) | pending |
+| Windows ZIP | [`7f53ec8c…4bf81`](https://www.virustotal.com/gui/file/7f53ec8c7d86a38ac5c9bced40df764f98be5fa2a207afd0181e99416b44bf81) | pending |
+| Linux tar.gz | [`9397c846…1eaef`](https://www.virustotal.com/gui/file/9397c846a35f9e8b4689feb83d5e4433f8117c73b51e7e280bf3afa84471eaef) | pending |
 
 ### v1.1.0
 
