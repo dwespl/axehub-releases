@@ -55,6 +55,20 @@ All release binaries are scanned on [VirusTotal](https://www.virustotal.com)
 so you can verify them before trusting any unsigned executable. Click the
 hash to see the public report.
 
+### v1.3.0
+
+- Compare Miners — overlay 6 metrics across all rigs on one chart
+- ABS / % modes, time range selector (15m–30d)
+- 30-day tiered history engine
+- Auto-scaling hashrate axis (KH/MH/GH/TH)
+- Efficiency in J/TH (industry standard)
+
+| Platform | SHA-256 | VirusTotal verdict |
+|----------|---------|--------------------|
+| Android APK | [`59976aec…6cf3f`](https://www.virustotal.com/gui/file/59976aec022646272c90b5d72ec0a46092989a5b401422d27ed48798b056cf3f) | 1 / 76 engines (Kaspersky heuristic, see below) |
+| Windows ZIP | [`51f3f7f7…38c79`](https://www.virustotal.com/gui/file/51f3f7f72a54247010832975f3b76b38d0777978fe4db799ed9d3b7901e38c79) | **0 / 76 engines** ✓ clean |
+| Linux tar.gz | [`aa93ff8c…9e4c3`](https://www.virustotal.com/gui/file/aa93ff8c489b760b255fc1a379b6e9df76ba24ae4e579dbd083a3bd24e89e4c3) | **0 / 76 engines** ✓ clean |
+
 ### v1.2.0
 
 - Pool presets — one-tap pool switching with coin icons and SOLO/PPS badges
