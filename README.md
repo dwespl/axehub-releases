@@ -36,7 +36,7 @@ Each release ships with three platforms:
 | Windows | `axehub-windows-X.Y.Z.zip` | Extract and run `axehub.exe` |
 | Linux | `axehub-linux-X.Y.Z.tar.gz` | Extract and run `./axehub` |
 
-Android is also available on **[Google Play Store](https://play.google.com/store/apps/details?id=com.axehub.app)**.
+Android is also in **Google Play closed testing** — contact via [GitHub issues](https://github.com/dwespl/axehub-releases/issues) to join the tester program.
 
 ## Verify downloads
 
