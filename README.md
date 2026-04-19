@@ -55,6 +55,20 @@ All release binaries are scanned on [VirusTotal](https://www.virustotal.com)
 so you can verify them before trusting any unsigned executable. Click the
 hash to see the public report.
 
+### v1.4.0
+
+- Miner-temperature scheduler — auto-switch tuning profiles on ASIC temp (with hysteresis)
+- Weather scheduler (BYOK) — your OpenWeatherMap key, city or coordinates, no GPS
+- Themed splash screen and app icon on Android
+- Matrix mode: stratum success replies no longer flagged red
+- Log spam cleanup, schedule editor race condition fix, desktop right-click menus on schedules
+
+| Platform | SHA-256 | VirusTotal verdict |
+|----------|---------|--------------------|
+| Android APK | [`5327d3bc…82614`](https://www.virustotal.com/gui/file/5327d3bcb1f13ce006e8498e59aff5c0fcc8f01c3e3ccc3189a7931571382614) | 1 / 76 engines (Kaspersky heuristic, see below) |
+| Windows ZIP | [`8da10a9c…76a85`](https://www.virustotal.com/gui/file/8da10a9cdf04456e635573c4162d82ba6809b106c478b0797bd816ef17a76a85) | **0 / 76 engines** ✓ clean |
+| Linux tar.gz | [`f50e5acf…2eef5`](https://www.virustotal.com/gui/file/f50e5acf9de3dd37ff24ebcfb4710d7fb130586988a36d242c58d44aae72eef5) | **0 / 76 engines** ✓ clean |
+
 ### v1.3.0
 
 - Compare Miners — overlay 6 metrics across all rigs on one chart
