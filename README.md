@@ -55,6 +55,23 @@ All release binaries are scanned on [VirusTotal](https://www.virustotal.com)
 so you can verify them before trusting any unsigned executable. Click the
 hash to see the public report.
 
+### v1.5.0
+
+- NerdMiner extended firmware support — coin picker (BTC / BC2 / custom), fallback pool, on-device controls (brightness, sleep, restart, buzzer), stats API URL
+- Offline-since indicator on miner cards ("Offline · 23m / 2d / 1w")
+- Per-pool-type profitability — PPS / FPPS / PPLNS / solo finally produce different numbers
+- Fallback pool visibility — badge on card, banner on detail, ACTIVE dot when on backup
+- Health badge (`⚠ PROBLEM`) when reject rate >5% or hashrate <70% of expected
+- Scheduler state reconciliation — fixes wrong tuning profile after mid-schedule reboot
+- Nano3S LED fix
+- Diagnostics filter precision — picking "Info" no longer leaks warnings
+
+| Platform | SHA-256 | VirusTotal verdict |
+|----------|---------|--------------------|
+| Android APK | [`cd4c78e1…2682e`](https://www.virustotal.com/gui/file/cd4c78e15d710fa1976421f494a1602f46134dcc166283604a741dc6eb52682e) | 1 / 67 engines (Kaspersky heuristic, see below) |
+| Windows ZIP | [`e7480b97…35de8`](https://www.virustotal.com/gui/file/e7480b97608d29ddbb0146d36bf6965a330e6b49c19ff3247228640780a35de8) | **0 / 68 engines** ✓ clean |
+| Linux tar.gz | [`c5b8cf69…81f58`](https://www.virustotal.com/gui/file/c5b8cf69acb69e86e945b4b24cfb4b911c5d2987269ee3a806541c2613381f58) | **0 / 61 engines** ✓ clean |
+
 ### v1.4.0
 
 - Miner-temperature scheduler — auto-switch tuning profiles on ASIC temp (with hysteresis)
@@ -205,3 +222,15 @@ Issues and feature requests: [axehub-releases/issues](https://github.com/dwespl/
 This is a hobby project — replies come when they come.
 
 Not affiliated with Bitmain, Canaan, Goldshell, NMMiner, or the Bitaxe team.
+
+## Support development
+
+Free app built with passion. Every satoshi motivates further development.
+
+- **Lightning**: `unsafemattock718@walletofsatoshi.com` — instant, zero fees (Wallet of Satoshi, Muun, Phoenix — scan and send)
+- **BC2 (Bitcoin II)**: `bc1qpc5zy3qhd9tv05940lvw2cq2chrp8ydr8ng5qj`
+  ⚠ Send ONLY BC2 coins here. Sending BTC may result in permanent loss.
+- **BTC on-chain**: `bc1q0tkwsnc6mfctcc02cxhrjfqs38nftcjtm79rqu`
+  ⚠ Send ONLY BTC here. Sending BC2 may result in permanent loss.
+
+A star ⭐ on this repo or [the firmware fork](https://github.com/dwespl/nerdminer-axehub) is also appreciated.
